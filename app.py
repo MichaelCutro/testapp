@@ -2,10 +2,9 @@ from dash import *
 from testapp import *
 
 app = Dash(__name__)
-server = app.server
 app.layout = html.Div([
     github_info_header(),
-    html.Img(src="assets/dalio.jpeg")
+    html.Img(src="assets/wsb.jpeg")
 ])
 
 if __name__ == '__main__':
