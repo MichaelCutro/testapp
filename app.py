@@ -1,7 +1,7 @@
 import dash
-from dash.dependencies import Input, Output
 from dash import dcc
 from dash import html
+
 from testapp import *
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -14,9 +14,10 @@ app.layout = html.Div([
     html.Button('Submit', id='button'),
     html.Div(id='output-container-button',
              children='Enter a value and press submit'),
-    html.Img(src="assets/dalio.jpeg", style={'height': '40%', 'width': '40%', 'padding': '2%'})
+    html.Img(src="assets/wsb.jpeg", style={'height': '40%', 'width': '40%', 'padding': '2%'})
 
 ])
+
 
 @app.callback(
     dash.dependencies.Output('output-container-button', 'children'),
